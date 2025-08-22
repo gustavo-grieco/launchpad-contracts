@@ -26,7 +26,7 @@ contract EchidnaMerkleHelpers is EchidnaSetup {
     }
 
     CompleteMerkle public merkle;
-    
+
     // counters and helper vars
     uint8 public _usersCounter;
     uint8 public _tokensCounter;
@@ -224,7 +224,7 @@ contract EchidnaMerkleHelpers is EchidnaSetup {
         bytes32 _merkleRoot
     ) public returns (bytes32[] memory) {
         bytes32[] memory userProof = userProofByMerkleRoot[_merkleRoot][_userAddress];
-        emit UserProof(_userAddress, userProof);
+        //emit UserProof(_userAddress, userProof);
         return userProof;
     }
 
